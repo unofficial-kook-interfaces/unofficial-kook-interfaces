@@ -233,7 +233,12 @@ class Channel:
 
     @staticmethod
     @req('POST')
-    def update(channel_id, name, topic, slow_mode):
+    def update(channel_id, name, topic, slow_mode, has_password, password):
+        ...
+        
+    @staticmethod
+    @req('POST')
+    def kickout(channel_id, user_id):
         ...
 
 
