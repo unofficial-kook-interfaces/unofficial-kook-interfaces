@@ -3,7 +3,7 @@
 # infra
 from .interface import AsyncRunnable, LazyLoadable
 from ._types import (MessageTypes, ChannelTypes, ChannelPrivacyTypes, EventTypes, GuildMuteTypes, SlowModeTypes,
-                     RoleTypes, SoftwareTypes)
+                     RoleTypes, SoftwareTypes, BadgeTypes)
 from .cert import Cert
 from .receiver import Receiver, WebhookReceiver, WebsocketReceiver
 from .requester import HTTPRequester
@@ -12,9 +12,11 @@ from .client import Client
 
 # concepts
 from .role import Role
-from .user import User
+from .user import User, GuildUser
+from .intimacy import Intimacy
 from .channel import Channel, PublicTextChannel, PublicVoiceChannel, PrivateChannel, PublicChannel
-from .guild import Guild, GuildUser
+from .game import Game
+from .guild import ChannelCategory, Guild, GuildBoost
 from .context import Context
 from .message import RawMessage, Message, PublicMessage, PrivateMessage, Event
 
